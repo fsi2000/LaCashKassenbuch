@@ -1,0 +1,38 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="KassendatenExportConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\KassendatenExport.MDB;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\KassendatenExport.MDB;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="Steuer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Giro" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Gutschein" Type="System.String" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Datum" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2017-01-01</Value>
+    </Setting>
+    <Setting Name="Kunde1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Optik Mayer</Value>
+    </Setting>
+    <Setting Name="Kunde2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Inh. Paul Gunzhuber</Value>
+    </Setting>
+    <Setting Name="Kunde3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hauptstraße 123</Value>
+    </Setting>
+    <Setting Name="Kunde4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">89674 Bayrischzarten</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
