@@ -207,10 +207,16 @@
 					Case 1			'ausgabe
 						'suchen in kassea (feld bunr)
 						Me.KasseaTableAdapter.FillByBuNr(Me.KassendatenExportDataSet.kassea, bunr)
-						steuersatz = KasseaBindingSource.Current("mwst")
+
+						If IsDBNull(KasseaBindingSource.Current("mwst")) Then
+							steuersatz = 999999999999
+						Else
+							steuersatz = KasseaBindingSource.Current("mwst")
+						End If
+
 						umsatzsteuer = KasseaBindingSource.Current("mwst1") / 100
-						'bunr = -1
-						bunr = bunr + 100000
+							'bunr = -1
+							bunr = bunr + 100000
 				End Select
 
 				If betrag > 0 Then									'beträge zusammenzählen
